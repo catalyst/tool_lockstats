@@ -40,7 +40,7 @@ class proxy_lock_testcase extends advanced_testcase {
     /**
      * Clean up the database.
      */
-    protected function setUp() {
+    protected function setUp(): void {
         global $CFG, $DB;
 
         $dbtype = clean_param($DB->get_dbfamily(), PARAM_ALPHA);
